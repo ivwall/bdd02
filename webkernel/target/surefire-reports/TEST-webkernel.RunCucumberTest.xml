@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="webkernel.RunCucumberTest" time="8.434" tests="7" errors="3" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="webkernel.RunCucumberTest" time="4.732" tests="7" errors="3" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="17+35-2724"/>
@@ -60,7 +60,7 @@
     <property name="sun.stdout.encoding" value="cp437"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="Sunday isn&apos;t Friday" classname="Is it Friday yet?" time="0.391">
+  <testcase name="Sunday isn&apos;t Friday" classname="Is it Friday yet?" time="0.231">
     <error message="The step &apos;today is Sunday&apos; is undefined.&#10;You can implement this step using the snippet(s) below:&#10;&#10;@Given(&quot;today is Sunday&quot;)&#10;public void today_is_sunday() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.UndefinedStepException">io.cucumber.junit.UndefinedStepException: 
 The step 'today is Sunday' is undefined.
 You can implement this step using the snippet(s) below:
@@ -79,7 +79,7 @@ Scenario: Sunday isn't Friday        &amp#27;[90m# webkernel/bdd.feature:4&amp#2
   &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI should be told &amp#27;[0m&amp#27;[36m&amp#27;[1m"Nope"&amp#27;[0m       &amp#27;[90m# webkernel.StepDefinitions.i_should_be_told(java.lang.String)&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Friday is Friday" classname="Is it Friday yet?" time="0">
+  <testcase name="Friday is Friday" classname="Is it Friday yet?" time="0.012">
     <error message="The step &apos;today is Friday&apos; is undefined.&#10;You can implement this step using the snippet(s) below:&#10;&#10;@Given(&quot;today is Friday&quot;)&#10;public void today_is_friday() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.UndefinedStepException">io.cucumber.junit.UndefinedStepException: 
 The step 'today is Friday' is undefined.
 You can implement this step using the snippet(s) below:
@@ -98,10 +98,10 @@ Scenario: Friday is Friday           &amp#27;[90m# webkernel/bdd.feature:9&amp#2
   &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI should be told &amp#27;[0m&amp#27;[36m&amp#27;[1m"TGIF"&amp#27;[0m       &amp#27;[90m# webkernel.StepDefinitions.i_should_be_told(java.lang.String)&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Today is or is not Friday #1" classname="Is it Friday yet?" time="0"/>
-  <testcase name="Today is or is not Friday #2" classname="Is it Friday yet?" time="0.016"/>
-  <testcase name="Today is or is not Friday #3" classname="Is it Friday yet?" time="0"/>
-  <testcase name="Finding some cheese" classname="Is it Friday yet?" time="0.093">
+  <testcase name="Today is or is not Friday #1" classname="Is it Friday yet?" time="0.014"/>
+  <testcase name="Today is or is not Friday #2" classname="Is it Friday yet?" time="0.009"/>
+  <testcase name="Today is or is not Friday #3" classname="Is it Friday yet?" time="0.017"/>
+  <testcase name="Finding some cheese" classname="Is it Friday yet?" time="0.028">
     <error message="Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null
 </error>
     <system-out><![CDATA[
@@ -115,5 +115,5 @@ Scenario: Finding some cheese                    &amp#27;[90m# webkernel/bdd.fea
   &amp#27;[36mThen &amp#27;[0m&amp#27;[36mthe page title should start with "cheese"&amp#27;[0m &amp#27;[90m# null&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Verification of Reset button" classname="Is it Friday yet?" time="6.958"/>
+  <testcase name="Verification of Reset button" classname="Is it Friday yet?" time="4.017"/>
 </testsuite>

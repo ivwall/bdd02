@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: webkernel.RunCucumberTest
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 8.434 sec <<< FAILURE! - in webkernel.RunCucumberTest
-Sunday isn't Friday(Is it Friday yet?)  Time elapsed: 0.391 sec  <<< ERROR!
+Tests run: 7, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 4.732 sec <<< FAILURE! - in webkernel.RunCucumberTest
+Sunday isn't Friday(Is it Friday yet?)  Time elapsed: 0.231 sec  <<< ERROR!
 io.cucumber.junit.UndefinedStepException: 
 The step 'today is Sunday' is undefined.
 You can implement this step using the snippet(s) below:
@@ -14,7 +14,7 @@ public void today_is_sunday() {
 }
 
 
-Friday is Friday(Is it Friday yet?)  Time elapsed: 0 sec  <<< ERROR!
+Friday is Friday(Is it Friday yet?)  Time elapsed: 0.012 sec  <<< ERROR!
 io.cucumber.junit.UndefinedStepException: 
 The step 'today is Friday' is undefined.
 You can implement this step using the snippet(s) below:
@@ -26,6 +26,6 @@ public void today_is_friday() {
 }
 
 
-Finding some cheese(Is it Friday yet?)  Time elapsed: 0.093 sec  <<< ERROR!
+Finding some cheese(Is it Friday yet?)  Time elapsed: 0.028 sec  <<< ERROR!
 java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null
 
