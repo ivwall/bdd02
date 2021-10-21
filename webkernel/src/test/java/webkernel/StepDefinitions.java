@@ -61,13 +61,16 @@ public class StepDefinitions {
 
     // An 
     // https://www.guru99.com/using-cucumber-selenium.html
+    // D:\2021\1020-webcucumber\bdd02\webkernel\target\dependency
     @Given("^Open the Firefox and launch the application$")				
     public void open_the_Firefox_and_launch_the_application() throws Throwable {		
         System.out.println("This Step open the Firefox and launch the application.");					
-        System.setProperty("webdriver.gecko.driver", "E://Selenium//Selenium_Jars//geckodriver.exe");					
-       driver= new FirefoxDriver();					
-       driver.manage().window().maximize();			
-       driver.get("http://demo.guru99.com/v4");	   }		
+        //System.setProperty("webdriver.gecko.driver", "E://Selenium//Selenium_Jars//geckodriver.exe");					
+        //System.setProperty("webdriver.chrome.driver", "D://2021//1021-selenium-jar//chrome//chromedriver.exe");					
+        System.setProperty("webdriver.chrome.driver", "D://2021//1020-webcucumber//bdd02//webkernel//target//dependancy//chromedriver.exe");					
+        driver= new ChromeDriver();					
+        driver.manage().window().maximize();			
+        driver.get("http://demo.guru99.com/v4");	   }		
 
     @When("^Enter the Username and Password$")					
     public void enter_the_Username_and_Password() throws Throwable {		

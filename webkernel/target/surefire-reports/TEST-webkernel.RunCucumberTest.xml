@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="webkernel.RunCucumberTest" time="0.875" tests="7" errors="4" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="webkernel.RunCucumberTest" time="8.434" tests="7" errors="3" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="17+35-2724"/>
@@ -60,7 +60,7 @@
     <property name="sun.stdout.encoding" value="cp437"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="Sunday isn&apos;t Friday" classname="Is it Friday yet?" time="0.234">
+  <testcase name="Sunday isn&apos;t Friday" classname="Is it Friday yet?" time="0.391">
     <error message="The step &apos;today is Sunday&apos; is undefined.&#10;You can implement this step using the snippet(s) below:&#10;&#10;@Given(&quot;today is Sunday&quot;)&#10;public void today_is_sunday() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.UndefinedStepException">io.cucumber.junit.UndefinedStepException: 
 The step 'today is Sunday' is undefined.
 You can implement this step using the snippet(s) below:
@@ -79,7 +79,7 @@ Scenario: Sunday isn't Friday        &amp#27;[90m# webkernel/bdd.feature:4&amp#2
   &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI should be told &amp#27;[0m&amp#27;[36m&amp#27;[1m"Nope"&amp#27;[0m       &amp#27;[90m# webkernel.StepDefinitions.i_should_be_told(java.lang.String)&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Friday is Friday" classname="Is it Friday yet?" time="0.016">
+  <testcase name="Friday is Friday" classname="Is it Friday yet?" time="0">
     <error message="The step &apos;today is Friday&apos; is undefined.&#10;You can implement this step using the snippet(s) below:&#10;&#10;@Given(&quot;today is Friday&quot;)&#10;public void today_is_friday() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.UndefinedStepException">io.cucumber.junit.UndefinedStepException: 
 The step 'today is Friday' is undefined.
 You can implement this step using the snippet(s) below:
@@ -98,10 +98,10 @@ Scenario: Friday is Friday           &amp#27;[90m# webkernel/bdd.feature:9&amp#2
   &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI should be told &amp#27;[0m&amp#27;[36m&amp#27;[1m"TGIF"&amp#27;[0m       &amp#27;[90m# webkernel.StepDefinitions.i_should_be_told(java.lang.String)&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Today is or is not Friday #1" classname="Is it Friday yet?" time="0.016"/>
-  <testcase name="Today is or is not Friday #2" classname="Is it Friday yet?" time="0.015"/>
-  <testcase name="Today is or is not Friday #3" classname="Is it Friday yet?" time="0.017"/>
-  <testcase name="Finding some cheese" classname="Is it Friday yet?" time="0.03">
+  <testcase name="Today is or is not Friday #1" classname="Is it Friday yet?" time="0"/>
+  <testcase name="Today is or is not Friday #2" classname="Is it Friday yet?" time="0.016"/>
+  <testcase name="Today is or is not Friday #3" classname="Is it Friday yet?" time="0"/>
+  <testcase name="Finding some cheese" classname="Is it Friday yet?" time="0.093">
     <error message="Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null
 </error>
     <system-out><![CDATA[
@@ -115,30 +115,5 @@ Scenario: Finding some cheese                    &amp#27;[90m# webkernel/bdd.fea
   &amp#27;[36mThen &amp#27;[0m&amp#27;[36mthe page title should start with "cheese"&amp#27;[0m &amp#27;[90m# null&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Verification of Reset button" classname="Is it Friday yet?" time="0.141">
-    <error message="Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN8&#10;Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;&#10;System info: host: &apos;WIN-SM32VSSSMHO&apos;, ip: &apos;192.168.229.183&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;17&apos;&#10;Driver info: driver.version: FirefoxDriver" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
-Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN8
-Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
-System info: host: 'WIN-SM32VSSSMHO', ip: '192.168.229.183', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '17'
-Driver info: driver.version: FirefoxDriver
-</error>
-    <system-out><![CDATA[
-Scenario: Verification of Reset button              &amp#27;[90m# webkernel/bdd.feature:31&amp#27;[0m
-This Step open the Firefox and launch the application.
-  &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mOpen the Firefox and launch the application&amp#27;[0m &amp#27;[90m# webkernel.StepDefinitions.open_the_Firefox_and_launch_the_application()&amp#27;[0m
-      &amp#27;[31morg.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN8
-Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
-System info: host: 'WIN-SM32VSSSMHO', ip: '192.168.229.183', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '17'
-Driver info: driver.version: FirefoxDriver
-	at org.openqa.selenium.firefox.internal.Executable.<init>(Executable.java:74)
-	at org.openqa.selenium.firefox.FirefoxBinary.<init>(FirefoxBinary.java:60)
-	at org.openqa.selenium.firefox.FirefoxBinary.<init>(FirefoxBinary.java:56)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
-	at webkernel.StepDefinitions.open_the_Firefox_and_launch_the_application(StepDefinitions.java:68)
-	at âœ½.Open the Firefox and launch the application(classpath:webkernel/bdd.feature:32)
-&amp#27;[0m
-  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mEnter the Username and Password&amp#27;[0m              &amp#27;[90m# webkernel.StepDefinitions.enter_the_Username_and_Password()&amp#27;[0m
-  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mReset the credential&amp#27;[0m                         &amp#27;[90m# webkernel.StepDefinitions.Reset_the_credential()&amp#27;[0m
-]]></system-out>
-  </testcase>
+  <testcase name="Verification of Reset button" classname="Is it Friday yet?" time="6.958"/>
 </testsuite>
