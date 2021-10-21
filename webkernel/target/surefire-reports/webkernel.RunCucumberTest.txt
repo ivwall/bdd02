@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: webkernel.RunCucumberTest
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.815 sec <<< FAILURE! - in webkernel.RunCucumberTest
-Sunday isn't Friday(Is it Friday yet?)  Time elapsed: 0.262 sec  <<< ERROR!
+Tests run: 7, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 0.875 sec <<< FAILURE! - in webkernel.RunCucumberTest
+Sunday isn't Friday(Is it Friday yet?)  Time elapsed: 0.234 sec  <<< ERROR!
 io.cucumber.junit.UndefinedStepException: 
 The step 'today is Sunday' is undefined.
 You can implement this step using the snippet(s) below:
@@ -14,7 +14,7 @@ public void today_is_sunday() {
 }
 
 
-Friday is Friday(Is it Friday yet?)  Time elapsed: 0.013 sec  <<< ERROR!
+Friday is Friday(Is it Friday yet?)  Time elapsed: 0.016 sec  <<< ERROR!
 io.cucumber.junit.UndefinedStepException: 
 The step 'today is Friday' is undefined.
 You can implement this step using the snippet(s) below:
@@ -26,9 +26,13 @@ public void today_is_friday() {
 }
 
 
-Finding some cheese(Is it Friday yet?)  Time elapsed: 0.034 sec  <<< ERROR!
-java.lang.Error: 
-Unresolved compilation problem: 
-	driver cannot be resolved
+Finding some cheese(Is it Friday yet?)  Time elapsed: 0.03 sec  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null
 
+Verification of Reset button(Is it Friday yet?)  Time elapsed: 0.141 sec  <<< ERROR!
+org.openqa.selenium.WebDriverException: 
+Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN8
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'WIN-SM32VSSSMHO', ip: '192.168.229.183', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '17'
+Driver info: driver.version: FirefoxDriver
 
