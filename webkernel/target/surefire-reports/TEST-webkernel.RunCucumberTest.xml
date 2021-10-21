@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="webkernel.RunCucumberTest" time="0.53" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="webkernel.RunCucumberTest" time="0.578" tests="2" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="17+35-2724"/>
@@ -60,5 +60,21 @@
     <property name="sun.stdout.encoding" value="cp437"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="Sunday isn&apos;t Friday" classname="Is it Friday yet?" time="0.114"/>
+  <testcase name="Sunday isn&apos;t Friday" classname="Is it Friday yet?" time="0.141"/>
+  <testcase name="Friday is Friday" classname="Is it Friday yet?" time="0.016">
+    <failure message="expected:&lt;[TGIF]&gt; but was:&lt;[Nope]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<[TGIF]> but was:<[Nope]>
+]]></failure>
+    <system-out><![CDATA[
+Scenario: Friday is Friday           &amp#27;[90m# webkernel/bdd.feature:9&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mtoday is Friday&amp#27;[0m              &amp#27;[90m# webkernel.StepDefinitions.today_is_Friday()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI ask whether it's Friday yet&amp#27;[0m &amp#27;[90m# webkernel.StepDefinitions.i_ask_whether_it_s_Friday_yet()&amp#27;[0m
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mI should be told &amp#27;[0m&amp#27;[31m&amp#27;[1m"TGIF"&amp#27;[0m       &amp#27;[90m# webkernel.StepDefinitions.i_should_be_told(java.lang.String)&amp#27;[0m
+      &amp#27;[31morg.junit.ComparisonFailure: expected:<[TGIF]> but was:<[Nope]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at webkernel.StepDefinitions.i_should_be_told(StepDefinitions.java:36)
+	at âœ½.I should be told "TGIF"(classpath:webkernel/bdd.feature:12)
+&amp#27;[0m
+]]></system-out>
+  </testcase>
 </testsuite>
