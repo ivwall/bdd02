@@ -1,62 +1,34 @@
 -------------------------------------------------------------------------------
 Test set: webkernel.RunCucumberTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 0.784 sec <<< FAILURE! - in webkernel.RunCucumberTest
-Today is or is not Friday #1(Is it Friday yet?)  Time elapsed: 0.099 sec  <<< ERROR!
+Tests run: 7, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.815 sec <<< FAILURE! - in webkernel.RunCucumberTest
+Sunday isn't Friday(Is it Friday yet?)  Time elapsed: 0.262 sec  <<< ERROR!
 io.cucumber.junit.UndefinedStepException: 
-The step 'today is "Friday"' is undefined.
+The step 'today is Sunday' is undefined.
 You can implement this step using the snippet(s) below:
 
-@Given("today is {string}")
-public void today_is(String string) {
+@Given("today is Sunday")
+public void today_is_sunday() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
 
 
-Today is or is not Friday #2(Is it Friday yet?)  Time elapsed: 0.01 sec  <<< ERROR!
+Friday is Friday(Is it Friday yet?)  Time elapsed: 0.013 sec  <<< ERROR!
 io.cucumber.junit.UndefinedStepException: 
-The step 'today is "Sunday"' is undefined.
+The step 'today is Friday' is undefined.
 You can implement this step using the snippet(s) below:
 
-@Given("today is {string}")
-public void today_is(String string) {
+@Given("today is Friday")
+public void today_is_friday() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
 
 
-Today is or is not Friday #3(Is it Friday yet?)  Time elapsed: 0.012 sec  <<< ERROR!
-io.cucumber.junit.UndefinedStepException: 
-The step 'today is "anything else!"' is undefined.
-You can implement this step using the snippet(s) below:
-
-@Given("today is {string}")
-public void today_is(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-
-Finding some cheese(Is it Friday yet?)  Time elapsed: 0.033 sec  <<< ERROR!
-io.cucumber.junit.UndefinedStepException: 
-The step 'I am on the Google search page' and 2 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given("I am on the Google search page")
-public void i_am_on_the_google_search_page() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("I search for {string}")
-public void i_search_for(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("the page title should start with {string}")
-public void the_page_title_should_start_with(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
+Finding some cheese(Is it Friday yet?)  Time elapsed: 0.034 sec  <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problem: 
+	driver cannot be resolved
 
 

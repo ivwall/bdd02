@@ -26,3 +26,9 @@ Feature: Is it Friday yet?
     Given I am on the Google search page
     When I search for "Cheese!"
     Then the page title should start with "cheese"
+
+# Feature: Reset functionality on login page of Application 
+  Scenario: Verification of Reset button 
+    Given Open the Firefox and launch the application			
+    When Enter the Username and Password			
+    Then Reset the credential
